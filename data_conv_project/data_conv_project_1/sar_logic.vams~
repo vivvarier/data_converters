@@ -1,9 +1,0 @@
-'include "constants.vams"
-'include "disciplines.vams"
-
-module dac_logic(comp_out,sample,dac_clk,s1,s1',s2,s2',s3,s3',s4,s4',s5,s5');
-
-input dac_clk,comp_out,sample;
-output s1,s1',s2,s2',s3,s3',s4,s4',s5,s5';
-
-logic dac_clk,comp_out,sample,s1,s1',s2,s2',s3,s3',s4,s4',s5,s5';
