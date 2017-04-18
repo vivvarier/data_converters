@@ -1,0 +1,42 @@
+// VerilogA for data_conv_project, adder, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module adder(vdin1,vdin2,vout);
+
+
+input [5:0] vdin1;
+electrical [5:0] vdin1;
+
+input [6:0] vdin2;
+electrical [6:0] vdin2;
+
+output vout;
+electrical vout;
+
+integer j;
+integer tmp1;
+integer tmp2;
+
+
+parameter vdd = 1.8;
+
+analog begin
+	@(initial_step)
+	tmp1 = 0;	
+	generate j(0,5) begin
+	tmp1 = tmp1 + pow(2,j)*V(vdin1[j])/vdd;	
+	end
+
+	@(initial_step)
+	tmp2 = 0;
+	generate j(0,6) begin
+	tmp2 = tmp2 + pow(2,j)*V(vdin2[j])/vdd;
+	end
+	
+	V(vout) <+ tmp1 + (tmp2/2);
+
+end
+
+endmodule

@@ -1,0 +1,17 @@
+\o Program:		@(#)$CDS: libManager.exe version 6.1.2 01/28/2008 14:01 (cat61lnx) $
+\o Sub version:		sub-version 07.02-s008
+\o Arguments:		-unmapped -mpssession virtuoso11874 -mpshost mario 
+\o Working Directory:	mario:/home/ecelrc/students/vvarier/vvarier/cadence/data_converters
+\o Qt version: 		4.2.3
+\o Loading customization file "/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cdsLibMgr.il"
+\o Loading NCSU Library Manager customizations...done.
+\o changeWorkingDir("/home/ecelrc/students/vvarier/vvarier/cadence/data_converters") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Log file is "/home/ecelrc/students/vvarier/vvarier/cadence/data_converters/libManager.log".
+\o Opening libManager window.
+\o MPS service: map window
+\a nrSetCurrentWindow(cdsLibManager)
+\o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(25 -24 600 410))
+\o libManager is exiting.
+\a exit(0)
