@@ -4,13 +4,13 @@
 # Information about current Edit Lock Owner.
 #
 LockStakeVersion               1.1
-LoginName                      vrayudu
+LoginName                      vvarier
 HostName                       mario
-ProcessIdentifier              18621
+ProcessIdentifier              30255
 ProcessCreationTime_UTC        0
 ProcessCreationTime_Readable   Wed Dec 31 18:00:00 1969 CST
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /home/ecelrc/students/vrayudu/Data_Converters/data_conv_project/pulse_gen/schematic/sch.oa.cdslck
-TimeEditLocked                 Sun Apr 16 09:52:11 2017 CDT
+FilePathUsedToEditLock         /home/ecelrc/students/vvarier/vvarier/cadence/data_conv_project/pulse_gen/schematic/sch.oa.cdslck.dirlck
+TimeEditLocked                 Mon Apr 17 17:38:55 2017 CDT
