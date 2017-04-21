@@ -35,7 +35,7 @@ analog begin
 	tmp2 = tmp2 + pow(2,j)*V(vdin2[j])/vdd;
 	end
 	
-	V(vout) <+ tmp1 + (tmp2/2);
+	V(vout) <+ tmp1 + (tmp2/32);
 
 end
 

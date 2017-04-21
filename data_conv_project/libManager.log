@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager.exe version 6.1.2 01/28/2008 14:01 (cat61lnx) $
 \o Sub version:		sub-version 07.02-s008
-\o Arguments:		-unmapped -mpssession virtuoso18621 -mpshost mario 
+\o Arguments:		-unmapped -mpssession virtuoso18095 -mpshost mario 
 \o Working Directory:	mario:/home/ecelrc/students/vrayudu/Data_Converters/data_conv_project
 \o Qt version: 		4.2.3
 \o Loading customization file "/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cdsLibMgr.il"
@@ -17,14 +17,15 @@
 \w Warning: The directory: '/home/ecelrc/students/who/RFIC/RFIC' does not exist
 \w 	but was defined in libFile '/home/ecelrc/students/vrayudu/Data_Converters/data_conv_project/cds.lib' for Lib 'RFIC'.
 \a nrResizeWindow(cdsLibManager list(0 31 1920 907))
+\a cdsLibManager->libListBox->value = "data_conv_proj"
+\a cdsLibManager->libListBox->value = "data_conv_proj"
 \a cdsLibManager->libListBox->value = "data_conv_project"
 \a cdsLibManager->libListBox->value = "data_conv_project"
 \a cdsLibManager->libLineEdit->value = "data_conv_project"
-\a cdsLibManager->cellListBox->value = "SAR_6b"
-\a cdsLibManager->cellListBox->value = "zz_SAR_6b"
+\a cdsLibManager->cellListBox->value = "zz_SAR_pipeline"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "zz_SAR_6b"
+\a cdsLibManager->cellLineEdit->value = "zz_SAR_pipeline"
 \a cdsLibManager->viewListBox->value = nil
 \a nrListItemAction(cdsLibManager->viewListBox 0 0)
 \a cdsLibManager->viewListBox->value = "schematic"
@@ -44,68 +45,56 @@
 \a cdsLibManager->libLineEdit->value = "data_conv_project"
 \a cdsLibManager->libListBox->value = "data_conv_project"
 \a cdsLibManager->libListBox->value = "data_conv_project"
-\a cdsLibManager->cellListBox->value = "zz_SAR_6b"
-\a cdsLibManager->cellLineEdit->value = "zz_SAR_6b"
+\a cdsLibManager->cellListBox->value = "zz_SAR_pipeline"
+\a cdsLibManager->cellLineEdit->value = "zz_SAR_pipeline"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "strong_arm_comp"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "strong_arm_comp"
+\a cdsLibManager->viewListBox->value = nil
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "EE382V_lib"
+\a cdsLibManager->libListBox->value = "EE382V_lib"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "EE382V_lib"
+\a cdsLibManager->cellListBox->value = "Comp"
+\a cdsLibManager->cellLineEdit->value = "Comp"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\o MPS request: edit design
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "data_conv_project"
+\a cdsLibManager->libListBox->value = "data_conv_project"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->FileNewCVButton->value = t
+\a cdsLibManager->libLineEdit->value = "data_conv_project"
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrResizeWindow(cdsLibManager list(0 31 800 547))
 \a nrResizeWindow(cdsLibManager list(0 31 1920 907))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "or_3b"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "or_3b"
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "or_2b"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->FileNewCVButton->value = t
-\a cdsLibManager->cellLineEdit->value = "or_2b"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "nor_2b"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "nor_2b"
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "nor_4bit"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "or_2b"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "or_2b"
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)
