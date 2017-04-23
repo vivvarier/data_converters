@@ -3,11 +3,18 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module adder(vdin1,vdin2,vout);
+module adder(clk,vdin1,vdin2,vout);
 
 
 input [5:0] vdin1;
 electrical [5:0] vdin1;
+
+input clk;
+electrical clk;
+
+parameter tt= 10p;
+
+parameter vth = 0.9;
 
 input [6:0] vdin2;
 electrical [6:0] vdin2;
@@ -16,26 +23,28 @@ output vout;
 electrical vout;
 
 integer j;
-integer tmp1;
-integer tmp2;
+real tmp1;
+real tmp2;
 
 
 parameter vdd = 1.8;
 
-analog begin
-	@(initial_step)
-	tmp1 = 0;	
-	generate j(0,5) begin
-	tmp1 = tmp1 + pow(2,j)*V(vdin1[j])/vdd;	
-	end
+real sum;
 
-	@(initial_step)
+analog begin
+	
+	tmp1 = 0;	
 	tmp2 = 0;
-	generate j(0,6) begin
-	tmp2 = tmp2 + pow(2,j)*V(vdin2[j])/vdd;
+	
+	generate j(0,5) begin
+	tmp2 = 2*tmp2 + (V(vdin2[5-j]))/vdd;
 	end
 	
-	V(vout) <+ tmp1 + (tmp2/32);
+	generate j(0,5) begin
+	tmp1 = 2*tmp1 + (V(vdin1[5-j]))/vdd;	
+	end
+
+	V(vout) <+ ((((tmp1*64)+(tmp2))/4095)*1.8);
 
 end
 
