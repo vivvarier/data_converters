@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      vrayudu
+HostName                       mario
+ProcessIdentifier              22687
+ProcessCreationTime_UTC        1493045173
+ProcessCreationTime_Readable   Mon Apr 24 09:46:13 2017 CDT
+AppIdentifier                  /misc/linuxws/packages/cadence_2007/ic612.500.5/tools.lnx86/dfII/bin/32bit/libManagerOA.exe
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /home/ecelrc/students/vrayudu/Data_Converters/data_conv_project/libManager.log
+TimeEditLocked                 Mon Apr 24 09:46:40 2017 CDT

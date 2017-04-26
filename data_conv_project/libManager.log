@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager.exe version 6.1.2 01/28/2008 14:01 (cat61lnx) $
 \o Sub version:		sub-version 07.02-s008
-\o Arguments:		-unmapped -mpssession virtuoso18095 -mpshost mario 
+\o Arguments:		-unmapped -mpssession virtuoso22598 -mpshost mario 
 \o Working Directory:	mario:/home/ecelrc/students/vrayudu/Data_Converters/data_conv_project
 \o Qt version: 		4.2.3
 \o Loading customization file "/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cdsLibMgr.il"
@@ -12,23 +12,28 @@
 \o MPS service: map window
 \a nrSetCurrentWindow(cdsLibManager)
 \o Library Manager customization server connected.
+\w Warning: ddLibDefListCallback::onLoadWarnings: libdef file '/home/ecelrc/students/vrayudu//lib.defs' load warning:
+\w  'Unable to open library HW1 at path /home/ecelrc/students/vrayudu/Analog_IC_Class/HW1: Invalid Lib Path'
+\w Warning: ddLibDefListCallback::onLoadWarnings: libdef file '/home/ecelrc/students/vrayudu//lib.defs' load warning:
+\w  'Unable to open library neuro at path /home/ecelrc/students/vrayudu/Analog_IC_Class/neuro: Invalid Lib Path'
+\w Warning: ddLibDefListCallback::onLoadWarnings: libdef file '/home/ecelrc/students/vrayudu//lib.defs' load warning:
+\w  'Unable to open library analogLib at path /home/ecelrc/students/vrayudu/Analog_IC_Class/analogLib: Invalid Lib Path'
+\w Warning: ddLibDefListCallback::onLoadWarnings: libdef file '/home/ecelrc/students/vrayudu//lib.defs' load warning:
+\w  'Unable to open library OTA_design at path /home/ecelrc/students/vrayudu/Analog_IC_Class/OTA_design: Invalid Lib Path'
+\w Warning: ddLibDefListCallback::onLoadWarnings: libdef file '/home/ecelrc/students/vrayudu//lib.defs' load warning:
+\w  'Unable to open library Final_Design at path /home/ecelrc/students/vrayudu/Analog_IC_Class/Final_Design: Invalid Lib Path'
 \w Warning: LIB data_conv_project from File /home/ecelrc/students/vrayudu/Data_Converters/data_conv_project/cds.lib Line 24 redefines
 \w LIB data_conv_project from the same file (defined earlier.)
 \w Warning: The directory: '/home/ecelrc/students/who/RFIC/RFIC' does not exist
 \w 	but was defined in libFile '/home/ecelrc/students/vrayudu/Data_Converters/data_conv_project/cds.lib' for Lib 'RFIC'.
 \a nrResizeWindow(cdsLibManager list(0 31 1920 907))
-\a cdsLibManager->libListBox->value = "data_conv_proj"
-\a cdsLibManager->libListBox->value = "data_conv_proj"
 \a cdsLibManager->libListBox->value = "data_conv_project"
 \a cdsLibManager->libListBox->value = "data_conv_project"
 \a cdsLibManager->libLineEdit->value = "data_conv_project"
 \a cdsLibManager->cellListBox->value = "zz_SAR_pipeline"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->cellLineEdit->value = "zz_SAR_pipeline"
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
 \a cdsLibManager->viewListBox->value = "schematic"
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
 \o MPS request: edit design
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
@@ -37,6 +42,16 @@
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libLineEdit->value = ""
+\w Warning: ddLibDefListCallback::onLoadWarnings: libdef file '/home/ecelrc/students/vrayudu//lib.defs' load warning:
+\w  'Unable to open library HW1 at path /home/ecelrc/students/vrayudu/Analog_IC_Class/HW1: Invalid Lib Path'
+\w Warning: ddLibDefListCallback::onLoadWarnings: libdef file '/home/ecelrc/students/vrayudu//lib.defs' load warning:
+\w  'Unable to open library neuro at path /home/ecelrc/students/vrayudu/Analog_IC_Class/neuro: Invalid Lib Path'
+\w Warning: ddLibDefListCallback::onLoadWarnings: libdef file '/home/ecelrc/students/vrayudu//lib.defs' load warning:
+\w  'Unable to open library analogLib at path /home/ecelrc/students/vrayudu/Analog_IC_Class/analogLib: Invalid Lib Path'
+\w Warning: ddLibDefListCallback::onLoadWarnings: libdef file '/home/ecelrc/students/vrayudu//lib.defs' load warning:
+\w  'Unable to open library OTA_design at path /home/ecelrc/students/vrayudu/Analog_IC_Class/OTA_design: Invalid Lib Path'
+\w Warning: ddLibDefListCallback::onLoadWarnings: libdef file '/home/ecelrc/students/vrayudu//lib.defs' load warning:
+\w  'Unable to open library Final_Design at path /home/ecelrc/students/vrayudu/Analog_IC_Class/Final_Design: Invalid Lib Path'
 \w Warning: LIB data_conv_project from File /home/ecelrc/students/vrayudu/Data_Converters/data_conv_project/cds.lib Line 24 redefines
 \w LIB data_conv_project from the same file (defined earlier.)
 \w Warning: The directory: '/home/ecelrc/students/who/RFIC/RFIC' does not exist
@@ -48,53 +63,5 @@
 \a cdsLibManager->cellListBox->value = "zz_SAR_pipeline"
 \a cdsLibManager->cellLineEdit->value = "zz_SAR_pipeline"
 \a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "strong_arm_comp"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "strong_arm_comp"
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "EE382V_lib"
-\a cdsLibManager->libListBox->value = "EE382V_lib"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "EE382V_lib"
-\a cdsLibManager->cellListBox->value = "Comp"
-\a cdsLibManager->cellLineEdit->value = "Comp"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\o MPS request: edit design
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "data_conv_project"
-\a cdsLibManager->libListBox->value = "data_conv_project"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->FileNewCVButton->value = t
-\a cdsLibManager->libLineEdit->value = "data_conv_project"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(0 31 800 547))
-\a nrResizeWindow(cdsLibManager list(0 31 1920 907))
-\o MPS service: shutdown
-\o libManager is exiting.
-\a exit(0)
+\a nrSetWindowVisibility(cdsLibManager "show")

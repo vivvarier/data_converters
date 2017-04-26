@@ -12,6 +12,7 @@ electrical [5:0] vdin1;
 input clk;
 electrical clk;
 
+parameter vth = 0.9;
 
 input [6:0] vdin2;
 electrical [6:0] vdin2;
